@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-визитка Дизайнера</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <img src="images/logo.png" alt="Логотип Margo Varnava" class="logo">
+    <h1>Margo Varnava</h1>
+    <nav>
+        <ul>
+            <li><a href="about.html">О себе</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+    <section id="main">
+        <h2>Привет! Я Марго, дизайнер</h2>
+        <p>Помогаю создавать уникальные визуальные решения.</p>
+    </section>
+
+    <section id="about">
+        <h2><a href="about.html">О себе</a></h2>
+        <p>Тут краткая информация о дизайнере и его подходе к работе.</p>
+    </section>
+
+    <section id="portfolio">
+    <h2>Портфолио</h2>
+    <div class="gallery">
+        <img src="images/project1.jpg" alt="Проект 1" class="thumbnail" onclick="openModal(this)">
+        <img src="images/project2.jpg" alt="Проект 2" class="thumbnail" onclick="openModal(this)">
+        <img src="images/project3.jpg" alt="Проект 3" class="thumbnail" onclick="openModal(this)">
+    </div>
+</section>
+
+<!-- Модальное окно для увеличенного изображения -->
+<div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+    <section id="services">
+        <h2>Услуги</h2>
+        <ul>
+            <li>Дизайн логотипов</li>
+            <li>Создание брендинга</li>
+            <li>UI/UX дизайн</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <form>
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="email" name="email" placeholder="Ваш email">
+            <textarea name="message" placeholder="Ваше сообщение"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Margo Varnava</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
